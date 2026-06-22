@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>My Practice Website</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 48px 36px;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,.25);
+  }
+  .logo {
+    width: 64px; height: 64px;
+    background: #2563eb;
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 16px;
+  }
+  h1 { font-size: 24px; color: #1e293b; margin-bottom: 8px; }
+  p.sub { color: #64748b; font-size: 14px; margin-bottom: 28px; }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.15s;
+  }
+  .btn-primary { background: #2563eb; color: #fff; }
+  .btn-primary:hover { background: #1d4ed8; }
+  .btn-outline { background: #fff; color: #2563eb; border: 2px solid #2563eb; }
+  .btn-outline:hover { background: #eff6ff; }
+  .note {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #94a3b8;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">🚀</div>
+    <h1>Welcome to My Website</h1>
+    <p class="sub">This is the home page — index.html. It's the first thing visitors see.</p>
+
+    <!-- These links jump to OTHER files in the same folder -->
+    <a href="about.html" class="btn btn-primary">📄 Go to About Page</a>
+    <a href="contact.html" class="btn btn-outline">✉️ Go to Contact Page</a>
+
+    <p class="note">Click a button above — it loads a completely different HTML file, but feels like one website.</p>
+  </div>
+
+</body>
+</html>
